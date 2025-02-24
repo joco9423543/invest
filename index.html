@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exchange Selection</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #0f3460;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      background-color: #16213e;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      color: #fff;
+    }
+    select, button {
+      width: 100%;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+    }
+    select {
+      background-color: #1a1a2e;
+      color: white;
+    }
+    button {
+      background-color: #e94560;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #d63447;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="nextpage.html" method="get">
+      <label for="exchange">Choose Investment Exchange</label>
+      <select id="exchange" name="exchange">
+        <option value="crypto">CRYPTO</option>
+        <option value="forex">FOREX</option>
+        <option value="stocks">STOCKS</option>
+        <option value="gold">GOLD</option>
+        <option value="oilgas">OIL & GAS</option>
+        <option value="real-estate">REAL-ESTATE</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
